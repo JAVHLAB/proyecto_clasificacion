@@ -1,0 +1,17 @@
+# Entornos
+env/
+venv/
+clasificacion_env/
+
+# Python
+__pycache__/
+*.pyc
+
+# Datos pesados
+datos/processed/
+
+# Modelos
+models/*.pkl
+
+# VS Code
+.vscode/
