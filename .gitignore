@@ -7,9 +7,6 @@ clasificacion_env/
 __pycache__/
 *.pyc
 
-# Datos pesados
-datos/processed/
-
 # Modelos
 models/*.pkl
 
