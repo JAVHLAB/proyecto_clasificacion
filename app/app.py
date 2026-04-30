@@ -24,7 +24,7 @@ col1, col2 = st.columns(2)
 with col1:
     age = st.number_input("Edad (Age)", min_value=18, max_value=100, value=30)
     income = st.number_input("Ingreso (Income)", min_value=0, value=50000)
-    loan_amount = st.number_input("Monto del préstamo (LoanAmount)", min_value=0, value=10000)
+    loan_amount = st.number_input("Monto del préstamo (LoanAmount)", min_value=0, max_value=100000, value=10000)
     credit_score = st.number_input("Puntaje de crédito (CreditScore)", min_value=300, max_value=850, value=650)
     years_experience = st.number_input("Años de experiencia (YearsExperience)", min_value=0, max_value=50, value=5)
 
