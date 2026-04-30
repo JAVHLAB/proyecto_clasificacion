@@ -1,7 +1,7 @@
 comandos:
 
 conda create --name clasificacion_env python=3.11 #crear entorno
-conda activate credit_env                         #activar entorno
+conda activate clasificacion_env                  #activar entorno
 pip install -r requirements.txt                   #instalar librerias
 python main.py                                    #correr archivo principal
 streamlit run app/app.py                          #correr interfaz grafica
