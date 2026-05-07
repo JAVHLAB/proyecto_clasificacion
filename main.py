@@ -5,8 +5,8 @@ from src.evaluate import evaluate_model
 import joblib
 import os
 
-from sklearn.tree import plot_tree
-import matplotlib.pyplot as plt
+#from sklearn.tree import plot_tree
+#import matplotlib.pyplot as plt
 
 df = load_data("datos/raw/loan_risk_prediction_dataset.csv")
 df = preprocess_data(df)
@@ -21,14 +21,6 @@ model, X_test, y_test = train_model(X, y)
 os.makedirs("models", exist_ok=True)
 joblib.dump(model, "models/decision_tree_model.pkl")
 joblib.dump(list(X.columns), "models/columns.pkl")
-
-plt.figure(figsize=(15,8))
-plot_tree(model, 
-          feature_names=X.columns, 
-          class_names=True, 
-          filled=True)
-
-plt.show()
 
 acc, cm = evaluate_model(model, X_test, y_test)
 
